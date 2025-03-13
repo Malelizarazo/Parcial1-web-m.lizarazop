@@ -1,0 +1,50 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://s.rfi.fr/media/display/fe8e4706-0fd9-11ea-b263-005056bf7c53/2012-07-28T094047Z_2065858924_LM2E87S0QVO1T_RTRMADP_3_OLY-SWIM-SWM4IM-SWM054905_0.JPG') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  /* Increase this */
+  width: 350px;
+  /* Change from fixed width to something bigger */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+} 

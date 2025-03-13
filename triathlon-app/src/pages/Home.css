@@ -1,0 +1,71 @@
+.home-container {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* User Info Section */
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0c6b5c;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.user-times {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+/* Activity Sessions */
+.sessions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.session-category {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.session-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columns */
+  gap: 10px;
+}
+
+.session-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.session-card:hover {
+  transform: scale(1.05);
+}
+
+.session-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.session-card p {
+  padding: 10px;
+  font-weight: bold;
+}
