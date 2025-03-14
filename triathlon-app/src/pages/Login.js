@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
+import { getMockUser } from "../mockService"; // Import mock service
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -12,6 +13,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const mockUser = getMockUser(); // Get mock user data
     if (!validateEmail(email)) {
       setError("Invalid email format");
       return;
@@ -21,6 +23,7 @@ function Login() {
       return;
     }
     setError(""); // Clear errors if everything is valid
+    localStorage.setItem("user", JSON.stringify(mockUser)); // Store user data
     console.log("Login successful:", { email, password });
 
     // Redirect or handle login logic
